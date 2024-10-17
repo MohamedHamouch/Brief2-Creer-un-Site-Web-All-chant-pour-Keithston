@@ -3,9 +3,9 @@ body {
     /* overflow-x: hidden; */
 }
 
-/* Styling Header */
+/*  HOme Styling */
 
-#header {
+#home-header {
     display: inline-grid;
     grid-template-rows: auto auto auto;
     background-image: url('../pictures/homepicture/background.png');
@@ -15,9 +15,7 @@ body {
     max-width: 100%;
     height: 100vh;
     width: 100vw;
-
 }
-
 #navbar {
     display: inline-grid;
     grid-template-columns: 150px auto;
@@ -27,14 +25,11 @@ body {
     top: 10px;
     margin-top: 20px;
 }
-
 #navbar .logo {
     height: 100px;
     width: 100px;
     justify-self: end;
-
 }
-
 #navbar li {
     list-style: none;
     display: inline;
@@ -48,9 +43,11 @@ body {
     text-decoration: none;
     color: whitesmoke;
 }
-
 #navbar li a:hover {
 
+    color: #E9BD8C;
+}
+#navbar .active {
     color: #E9BD8C;
 }
 
@@ -59,12 +56,10 @@ body {
     justify-self: start;
 
 }
-
 .info {
     margin-top: 40px;
     margin-left: 100px;
 }
-
 .info h3 {
     color: #E9BD8C;
     font-family: inter, Arial, Helvetica, sans-serif;
@@ -72,7 +67,6 @@ body {
     font-weight: 600;
     margin-bottom: 0;
 }
-
 .info h1,
 .info h2 {
     color: whitesmoke;
@@ -118,10 +112,6 @@ body {
 #home-button2:hover {
     transition: 0.25s;
     text-decoration: underline;
-}
-
-#navbar .active {
-    color: #E9BD8C;
 }
 
 /* Styling Top Products Section */

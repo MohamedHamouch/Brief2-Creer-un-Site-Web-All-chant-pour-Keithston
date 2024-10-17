@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    align-items: flex-start;
+    height: 13rem;
+    background-color: black;
+
+}
+#navbar {
+    display: inline-grid;
+    grid-template-columns: 150px auto;
+    column-gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    top: 10px;
+    margin-top: 20px;
+}
+#navbar .logo {
+    height: 150px;
+    width: 150px;
+}
+#navbar ul{
+    margin-left: 80px;
+    margin-top: 40px;
+    align-self: flex-start;
+}
+#navbar li {
+    list-style: none;
+    display: inline;
+    margin-left: 90px;
+}
+
+#navbar li a {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: whitesmoke;
+}
+#navbar li a:hover {
+
+    color: #E9BD8C;
+}
+#navbar .active {
+    color: #E9BD8C;
+}
+
+/*Menu Section*/
+#menu h3{
+    font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+
+/* Footer Styling */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    background-image: url(../pictures/footerbackground/footer-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+}
+.footer-logo-container{
+    width: 60vw;
+    padding-top: 30px;
+}
+.follow-us-container{
+    width: 9000vw;
+    text-align: center;
+}
+.follow-us-text {
+    display: inline;
+    color: #E9BD8C;
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 35px;
+    margin-right: 70px;
+    padding-top: 50px;
+}
+.social-media{
+    padding-top: 50px;
+    margin-right: 30px;
+}
+.footer-headers{
+    color: #E9BD8C;
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 30vw;
+    margin-top: 15px;
+}
+#recent-news{
+    text-align: center;
+}
+.footer-text{
+    color: whitesmoke;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.footer-date{
+    color: #E9BD8C;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.copy-right{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: #737373;
+}
