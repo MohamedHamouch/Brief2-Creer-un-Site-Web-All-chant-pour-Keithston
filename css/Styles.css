@@ -1,12 +1,11 @@
-
-body{
+body {
     margin: 0;
     /* overflow-x: hidden; */
 }
 
 /* Styling Header */
 
-#header{
+#header {
     display: inline-grid;
     grid-template-rows: auto auto auto;
     background-image: url('../pictures/homepicture/background.png');
@@ -15,11 +14,11 @@ body{
     background-position: center;
     max-width: 100%;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
 
 }
 
-#navbar{
+#navbar {
     display: inline-grid;
     grid-template-columns: 150px auto;
     column-gap: 20px;
@@ -29,60 +28,66 @@ body{
     margin-top: 20px;
 }
 
-#navbar .logo{
+#navbar .logo {
     height: 100px;
     width: 100px;
     justify-self: end;
 
 }
 
-#navbar li{
+#navbar li {
     list-style: none;
     display: inline;
     margin-left: 20px;
 }
 
-#navbar li a{
-    font-family: Poppins, Arial, Helvetica, sans-serif ;
+#navbar li a {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
     font-size: 30px;
     font-weight: 600;
     text-decoration: none;
     color: whitesmoke;
 }
 
-#navbar li a:hover{
-    
+#navbar li a:hover {
+
     color: #E9BD8C;
 }
 
-#button-container{
+#button-container {
     align-self: center;
     justify-self: start;
 
 }
-.info{
+
+.info {
     margin-top: 40px;
     margin-left: 100px;
 }
-.info h3{
-    color:#E9BD8C;
+
+.info h3 {
+    color: #E9BD8C;
     font-family: inter, Arial, Helvetica, sans-serif;
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 0;
 }
-.info h1, .info h2{
+
+.info h1,
+.info h2 {
     color: whitesmoke;
-    font-family:'Sansita Swashed', Arial, Helvetica, sans-serif;
+    font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
     margin: 0;
     font-size: 75px;
     font-weight: 400;
 }
-#home-buttons{
+
+#home-buttons {
     margin-left: 100px;
     margin-top: 60px;
 }
-.home-button1{
+
+.home-button1 {
     color: whitesmoke;
     background-color: #933C24;
     padding: 20px 40px;
@@ -93,14 +98,14 @@ body{
     font-weight: 600;
 }
 
-.home-button1:hover{
+.home-button1:hover {
     background-color: #E9BD8C;
     color: #933C24;
     opacity: 0.8;
     transition: 0.25s;
 }
 
-#home-button2{
+#home-button2 {
     color: rgba(233, 189, 140, 1);
     background: none;
     border: none;
@@ -109,34 +114,38 @@ body{
     font-size: 24px;
     font-weight: 700;
 }
-#home-button2:hover{
+
+#home-button2:hover {
     transition: 0.25s;
     text-decoration: underline;
 }
 
-#navbar .active{
+#navbar .active {
     color: #E9BD8C;
 }
 
 /* Styling Top Products Section */
-#top-products{
-    margin:0;
+#top-products {
+    margin: 0;
     width: auto;
 }
-#top-products h4{
-    font-family:'Sansita Swashed', Arial, Helvetica, sans-serif;
+
+#top-products h4 {
+    font-family: 'Sansita Swashed', Arial, Helvetica, sans-serif;
     font-size: 80px;
     text-align: center;
 }
-#top-products-container{
+
+#top-products-container {
     display: grid;
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(3, 350px);
     grid-template-rows: 400px 400px;
     gap: 40px;
-    justify-content:center;
+    justify-content: center;
 
 }
-#top-products-container > .product{
+
+#top-products-container>.product {
     background-image: url(../pictures/topproducts/background/background.png);
     background-size: cover;
     background-position: center;
@@ -144,16 +153,18 @@ body{
     text-align: center;
     padding-top: 10px;
 }
-.product *{
+
+.product * {
     max-height: 225px;
 }
-.info-flex-container{
+
+.info-flex-container {
     display: flex;
     color: white;
-    left: 20px$;
+    left: 20px;
 }
 
-.info-text{
+.info-text {
     font-family: inter, Arial, Helvetica, sans-serif;
     font-size: 22px;
     font-weight: 600;
@@ -162,22 +173,26 @@ body{
     width: 150px;
     text-align: start;
 }
-.info-text p:first-child{
+
+.info-text p:first-child {
     margin-top: 0px;
-    margin-bottom: 60px; ;
+    margin-bottom: 60px;
+    ;
 }
-.add-button{
-   background-color: #933C24;
-   border: none;
-   border-radius: 3px;
-   color: white;
-   font-family: inter, Arial, Helvetica, sans-serif;
-   font-size: 22px;
-   font-weight: 500;
-   padding: 10px 20px;
-   margin: 40px 0px 0px 60px;
+
+.add-button {
+    background-color: #933C24;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 40px 0px 0px 60px;
 }
-.add-button:hover{
+
+.add-button:hover {
     background-color: #E9BD8C;
     color: #933C24;
     opacity: 0.8;
@@ -186,29 +201,32 @@ body{
 
 /* About Ad Styling */
 
-.about-ad{
+.about-ad {
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url(../pictures/aboutus/aboutadbackground.png);
     background-size: contain;
-    background-repeat: no-repeat; 
-    background-position: center; 
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     height: 100vh;
 }
-.about-ad div{
+
+.about-ad div {
     text-align: center;
 }
-.about-ad div p:first-of-type{
-    font-family: "Sansita Swashed",Arial, Helvetica, sans-serif;
+
+.about-ad div p:first-of-type {
+    font-family: "Sansita Swashed", Arial, Helvetica, sans-serif;
     font-size: 60px;
     font-weight: 600;
     color: whitesmoke;
     margin-top: 30px;
     margin-bottom: 0;
 }
-.about-ad div p:last-of-type{
+
+.about-ad div p:last-of-type {
     font-family: inter, Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 400;
@@ -220,11 +238,62 @@ body{
 
 /* Footer Styling */
 
-footer{
-    background-image: url(../pictures/footerbackground/footerbackground.png);
-    background-size: fit;
-    background-repeat: no-repeat; 
-    background-position: center; 
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 25px;
+    background-image: url(../pictures/footerbackground/footer-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
     width: 100%;
-    height: 50vh;
+    height: 100%;
+}
+.footer-logo-container{
+    width: 60vw;
+    padding-top: 30px;
+}
+.follow-us-container{
+    width: 9000vw;
+    text-align: center;
+}
+.follow-us-text {
+    display: inline;
+    color: #E9BD8C;
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    padding-left: 35px;
+    margin-right: 70px;
+    padding-top: 50px;
+}
+.social-media{
+    padding-top: 50px;
+    margin-right: 30px;
+}
+.footer-headers{
+    color: #E9BD8C;
+    font-family: inter, Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    width: 30vw;
+    margin-top: 15px;
+}
+#recent-news{
+    text-align: center;
+}
+.footer-text{
+    color: whitesmoke;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.footer-date{
+    color: #E9BD8C;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+.copy-right{
+    font-family: Inter, Arial, Helvetica, sans-serif;
+    color: #737373;
 }
