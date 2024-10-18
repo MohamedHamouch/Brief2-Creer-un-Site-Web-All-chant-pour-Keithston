@@ -17,7 +17,7 @@ body {
 }
 
 #navbar {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 150px auto;
     column-gap: 20px;
     justify-content: space-between;
@@ -45,7 +45,7 @@ body {
 
 #navbar li a {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-decoration: none;
     color: whitesmoke;
@@ -111,7 +111,18 @@ h4 {
     text-decoration: underline;
     text-decoration-thickness: 4px;
 }
-
+@media screen and (max-width: 1200px) {
+    #menu-container {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+}
+@media screen and (max-width: 800px) {
+    #menu-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
 
 /* About Ad Styling */
 
@@ -123,7 +134,7 @@ h4 {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
+    width: auto;
     height: 80vh;
     margin-bottom: 0;
     ;
@@ -197,6 +208,27 @@ h4 {
 
 .treat-text p {
     margin-top: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    #treats-container {
+        display: grid;
+        grid-template-columns: repeat(3, 300px);
+    }
+    #treats-container *{
+        font-size: 20px;
+        max-width: 300px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #treats-container {
+        display: grid;
+        grid-template-columns: repeat(3, 200px);
+    }
+    #treats-container img{
+        border-radius: 20px;
+        max-width: 200px;
+    }
 }
 
 /* Footer Styling */

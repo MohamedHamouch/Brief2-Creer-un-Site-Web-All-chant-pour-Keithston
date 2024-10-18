@@ -9,7 +9,7 @@ body {
 /*  Home Styling */
 
 #home-header {
-    display: inline-grid;
+    display: grid;
     grid-template-rows: auto auto auto;
     background-image: url('../pictures/homepicture/background.png');
     background-size: cover;
@@ -21,7 +21,7 @@ body {
 }
 
 #navbar {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 150px auto;
     column-gap: 20px;
     justify-items: start;
@@ -44,7 +44,7 @@ body {
 
 #navbar li a {
     font-family: Poppins, Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
     text-decoration: none;
     color: whitesmoke;
@@ -148,6 +148,28 @@ body {
     justify-content: center;
 
 }
+
+@media screen and (max-width: 1200px) {
+    #top-products-container {
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(3. 400px);
+    }
+    #top-products-contaire {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 800px) {
+    #top-products-container {
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-template-rows: repeat(6. 400px);
+    }
+    #top-products-contaire {
+        font-size: 10px;
+    }
+}
+
 
 #top-products-container>.product {
     background-image: url(../pictures/topproducts/background/background.png);
@@ -310,3 +332,5 @@ footer {
     font-family: Inter, Arial, Helvetica, sans-serif;
     color: #737373;
 }
+
+
