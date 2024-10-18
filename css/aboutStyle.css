@@ -71,7 +71,6 @@ h1 {
 .about-container {
     display: grid;
     grid-template-columns: 400px 150px 400px;
-    grid-template-rows: 300px 300px;
     justify-content: space-evenly;
     row-gap: 50px;
     margin-bottom: 90px;
@@ -110,6 +109,15 @@ h1 {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-weight: 400;
+}
+@media screen and (max-width:1200px) {
+    .about-container {
+        display: grid;
+        grid-template-columns: 25% 10% 25%;
+        justify-content: space-evenly;
+        row-gap: 30px;
+        margin-bottom: 90px;
+    }
 }
 
 /* Sale Ad Styling */
