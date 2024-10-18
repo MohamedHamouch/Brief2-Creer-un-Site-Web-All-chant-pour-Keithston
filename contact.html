@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Contact</title>
+        <title>Contact</title>  
         <link rel="stylesheet" href="css/contactStyle.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,7 +12,78 @@
             rel="stylesheet" />
     </head>
 <body>
-    
-    
+
+    <!--Header / Navigation Bar-->
+
+    <header id="header">
+        <nav id="navbar">
+            <img src="pictures/homepicture/logo.png" alt="Keithston logo" class="logo" />
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Contact Form section-->
+
+    <section>
+        <h1>Contact Us</h1>
+    <div class="text">
+        <p class="paragraph">We value your feedback. If you have any questions or comments, feel free to complete the form below.</p>
+    </div>
+    <form>
+        <input type="text" name="First-name" class="text-input" placeholder="First Name">
+        <input type="text" name="Last-name" class="text-input" placeholder="Last Name">
+        <input type="email" name="Email" class="text-input" id="email" placeholder="Email">
+        <input type="text" name="Message" class="text-input" id="message" placeholder="Message">
+        <input type="submit" value="Submit" id="sub-button">
+    </form>
+    </section>
+        
+<!--Footer section-->
+
+<footer>
+    <div class="footer-logo-container">
+        <img src="pictures/homepicture/logo.png" alt="logo" class="footer-logo">
+    </div>
+    <div class="follow-us-coantainer">
+        <p class="follow-us-text">Follow us</p>
+        <img src="pictures/socialmedialogos/svg logs/facebook.svg" alt="Facebook" class="social-media">
+        <img src="pictures/socialmedialogos/svg logs/pinterest.svg" alt="Paintrest" class="social-media">
+        <img src="pictures/socialmedialogos/svg logs/whatsapp.svg" alt="ihatsapp" class="social-media">
+        <img src="pictures/socialmedialogos/svg logs/instagram.svg" alt="Instagram" class="social-media">
+    </div>
+    <div class="footer-text-container">
+        <p class="footer-headers">About us</p>
+        <p class="footer-text">(456) 789-12301</p>
+        <p class="footer-text">info@modrino.co.uk</p>
+        <p class="footer-text">South 13th street</p>
+        <p class="footer-text">New york America</p>
+    </div>
+    <div class="footer-text-container">
+        <p class="footer-headers">Explore</p>
+        <p class="footer-text">Home</p>
+        <p class="footer-text">Menu</p>
+        <p class="footer-text">Contact us</p>
+        <p class="footer-text">About us</p>
+    </div>
+    <div class="footer-text-container">
+        <p class="footer-headers">Recent News</p>
+        <span id="recent-news">
+            <img style="float: left;" src="/pictures/footerbackground/palte1.png" alt="">
+            <p class="footer-date">June 14,2024</p>
+            <p class="footer-text">puffy pastry bliss.</p>
+            <img style="float: left;" src="/pictures/footerbackground/plate2.png" alt="">
+            <p class="footer-date">June 14,2024</p>
+            <p class="footer-text">puffy pastry bliss.</p>
+        </span>
+    </div>
+    <p class="copy-right">© 2024 Bake House. All rights reserved</p>
+
+</footer>
+
 </body>
 </html>
