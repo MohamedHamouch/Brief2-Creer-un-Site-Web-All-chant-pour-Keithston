@@ -1,13 +1,17 @@
 body {
     margin: 0;
 }
+*{
+    box-sizing: border-box;
+
+}
 
 /*styling Header Navbar*/
 
 #header {
     display: flex;
     align-items: flex-start;
-    height: 13rem;
+    height: 9rem;
     background-color: black;
 
 }
@@ -142,7 +146,6 @@ h4 {
     font-family: inter, Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: 400;
-    color: whitesmoke;
     width: 350px;
     color: #B9B9B9;
     margin-bottom: 50px;

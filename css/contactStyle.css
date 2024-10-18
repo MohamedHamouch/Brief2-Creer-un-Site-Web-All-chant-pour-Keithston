@@ -1,13 +1,17 @@
 body {
     margin: 0;
 }
+*{
+    box-sizing: border-box;
+
+}
 
 /*styling Header Navbar*/
 
 #header {
     display: flex;
     align-items: flex-start;
-    height: 13rem;
+    height: 9rem;
     background-color: black;
 
 }
